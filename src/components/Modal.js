@@ -1,9 +1,31 @@
-import React from 'react'
+// import React , {useState} from 'react'
+// import { Modal } from 'react-bootstrap'
+// import { Button } from 'react-bootstrap'
 
-function Modal() {
-  return (
-    <>
-      <div className="modal"  role="dialog">
+// function modal1() {
+  // const [show, setShow] = useState(true);
+
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
+
+  // return (
+  //   <>
+
+{/* <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal> */}
+      {/* <div className="modal"  role="dialog">
   <div className="modal-dialog" role="document">
     <div className="modal-content">
       <div className="modal-header">
@@ -33,11 +55,11 @@ function Modal() {
       </div>
     </div>
   </div>
-</div>
+</div> */}
 
-
+{/* 
     </>
   )
-}
+} */}
 
-export default Modal
+// export default Modal1

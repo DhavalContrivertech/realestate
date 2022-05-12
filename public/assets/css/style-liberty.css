@@ -2747,10 +2747,14 @@ textarea.form-control.is-invalid {
   text-decoration: none;
 }
 
-.btn:focus,
+.btn:focus:not(.btn-primary),
 .btn.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(255, 98, 26, 0.69);
+}
+
+.btn-primary:focus{
+  border: none !important;
 }
 
 .btn.disabled,
@@ -2765,38 +2769,38 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
+  /* background-color: var(--primary-color);
+  border-color: var(--primary-color); */
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color);
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 0.2rem rgba(255, 98, 26, 0.69);
+  box-shadow: 0 0 0 0.2rem rgba(255, 98, 26, 0.69); */
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color);
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 0.2rem rgba(255, 98, 26, 0.69);
+  box-shadow: 0 0 0 0.2rem rgba(255, 98, 26, 0.69); */
 }
 
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #fff;
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
+  /* background-color: var(--primary-color);
+  border-color: var(--primary-color); */
 }
 
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
+  /* background-color: var(--primary-color);
+  border-color: var(--primary-color); */
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -6353,12 +6357,13 @@ a.close.disabled {
 }
 
 .modal-backdrop.fade {
-  opacity: 0;
+  opacity: 0.5;
+  /* display: none; */
 }
 
-.modal-backdrop.show {
+/* .modal-backdrop.show {
   opacity: 0.5;
-}
+} */
 
 .modal-header {
   display: flex;
@@ -14518,7 +14523,8 @@ button.navbar-toggler.collapsed .icon-expand {
 }
 
 header {
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
+  background-color: #f3eada;
   padding: 0px;
   transition: all 0.4s ease 0s;
   height: 90px;
@@ -15145,7 +15151,8 @@ a.view:hover {
 }
 
 .w3l-main-slider .banner-view {
-  background: url("../images/banner1.jpg") no-repeat center;
+  /* background: url(../images/Feel\ Greenery.jpeg) no-repeat center; */
+  background: url(../images/Greenary-1.jpg) no-repeat center;
   background-size: cover;
   min-height: 100vh;
   position: relative;
@@ -15155,19 +15162,21 @@ a.view:hover {
 }
 
 .w3l-main-slider .banner-top1 {
-  background: url("../images/banner2.jpg") no-repeat center;
+  /* background: url("../images/banner2.jpg") no-repeat center; */
+  background: url(../images/Teaser\ 1\ Chandak.jpeg) no-repeat center;
   background-size: cover;
   min-height: 100vh;
 }
 
 .w3l-main-slider .banner-top2 {
-  background: url("../images/banner3.jpg") no-repeat center;
+  /* background: url("../images/banner3.jpg") no-repeat center; */
+  background: url(../images/Teaser\ 2\ Chandak.jpeg) no-repeat center;
   background-size: cover;
   min-height: 100vh;
 }
 
 .w3l-main-slider .banner-top3 {
-  background: url(../images/banner4.jpg) no-repeat center;
+  background: url(../images/Teaser\ 3\ Chandak.jpeg) no-repeat center;
   background-size: cover;
   min-height: 100vh;
 }
@@ -15860,7 +15869,8 @@ a.hnys-title:hover {
 }
 
 .w3l-how-grids-3 .grid-bg1 {
-  background: url(../images/banner2.jpg) no-repeat center;
+  /* background: url(../images/banner2.jpg) no-repeat center; */
+  background: url(../images/railway.jpeg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -15875,7 +15885,8 @@ a.hnys-title:hover {
 }
 
 .w3l-how-grids-3 .grid-bg2 {
-  background: url(../images/banner4.jpg) no-repeat center;
+  /* background: url(../images/banner4.jpg) no-repeat center; */
+  background: url(../images/metro\ wholesale.jpeg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -15890,7 +15901,8 @@ a.hnys-title:hover {
 }
 
 .w3l-how-grids-3 .grid-bg3 {
-  background: url(../images/g1.jpg) no-repeat center;
+  /* background: url(../images/g1.jpg) no-repeat center; */
+  background: url(../images/school.jpeg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -15905,7 +15917,8 @@ a.hnys-title:hover {
 }
 
 .w3l-how-grids-3 .grid-bg4 {
-  background: url(../images/g2.jpg) no-repeat center;
+  /* background: url(../images/g2.jpg) no-repeat center; */
+  background: url(../images/hospital.jpeg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -15920,7 +15933,53 @@ a.hnys-title:hover {
 }
 
 .w3l-how-grids-3 .grid-bg5 {
-  background: url(../images/g3.jpg) no-repeat center;
+  /* background: url(../images/g3.jpg) no-repeat center; */
+  background: url(../images/magathane\ metro.jpeg) no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  padding: 50px 30px;
+  min-height: 300px;
+  display: grid;
+  align-content: end;
+  position: relative;
+  z-index: 1;
+}
+.w3l-how-grids-3 .grid-bg6 {
+  /* background: url(../images/g3.jpg) no-repeat center; */
+  background: url(../images/metro\ wholesale.jpeg) no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  padding: 50px 30px;
+  min-height: 300px;
+  display: grid;
+  align-content: end;
+  position: relative;
+  z-index: 1;
+}
+.w3l-how-grids-3 .grid-bg7 {
+  /* background: url(../images/g3.jpg) no-repeat center; */
+  background: url(../images/railway.jpeg) no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  padding: 50px 30px;
+  min-height: 300px;
+  display: grid;
+  align-content: end;
+  position: relative;
+  z-index: 1;
+}
+.w3l-how-grids-3 .grid-bg8 {
+  /* background: url(../images/g3.jpg) no-repeat center; */
+  background: url(../images/school.jpeg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -15956,8 +16015,8 @@ a.hnys-title:hover {
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0.6;
-  background: #000;
+  /* opacity: 0.6; */
+  /* background: #000; */
   z-index: -1;
 }
 
@@ -19395,14 +19454,63 @@ form.signin-form {
   padding: 10px;
 }
 
+
+.vid-close{
+  border-width: 0px !important;
+  background-color: none !important;
+}
+
+.counter_grid , .counter_grid1{
+  text-align: center;
+}
+
+.modal-backdrop.show{
+  opacity: 0px !important;
+}
+
 .modal1{
   font-family: 'Allerta Stencil', sans-serif;
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
+  position: fixed !important;
+  bottom: 100px !important;
+  right: 20px !important;
   border-radius: 15px;
   color: gray;
   width: 300px;
-  display: unset !important;
-  z-index: 10;
+  z-index: 1000;
+  /* margin: 0px 0px 0px auto; */
+  margin: -97px 0px 0px auto;
+  transform: translate(0px , 0px);
+}
+
+
+.history-info .position-relative video{
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .history-info .position-relative div {
+    width: 300px !important;
+  }
+  /* .history-info .position-relative  video{
+    width: 350px !important;
+    height: auto; */
+    /* height: 500px; */
+  /* } */
+    
+}
+.modal1{
+  background-color: white;
+  padding: 10px;
+}
+
+.header-modal{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer{
+  display: grid;
+  place-items: center;
 }

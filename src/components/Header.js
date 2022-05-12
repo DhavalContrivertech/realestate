@@ -7,7 +7,8 @@ function Header() {
   <div className="container">
     <nav className="navbar navbar-expand-lg stroke">
       <h1><a className="navbar-brand mr-lg-5" href="index.html">
-          Hom<span>i</span>sh
+          {/* Hom<span>i</span>sh */}
+          <img src="assets/images/chandak-logo.svg" alt="" srcset="" />
         </a></h1>
       {/* if logo is image enable this   
 <a class="navbar-brand" href="#index.html">
@@ -19,32 +20,35 @@ function Header() {
       </button>
       <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul className="navbar-nav ml-auto">
-          <li className="nav-item active">
-            <a className="nav-link" href="index.html">Home <span className="sr-only">(current)</span></a>
+          {/* <li className="nav-item active">
+            <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="about.html">About</a>
+            <a className="nav-link" href="/">About</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="services.html">Services</a>
-          </li>
-          <li className="nav-item dropdown">
+            <a className="nav-link" href="/">Services</a>
+          </li> */}
+          {/* <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Blog<span className="fa fa-angle-down" />
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown1">
-              <a className="dropdown-item" href="blog.html">Blog Posts</a>
-              <a className="dropdown-item" href="blog-single.html">Blog single</a>
-              <a className="dropdown-item" href="error.html">404 Page</a>
-              <a className="dropdown-item" href="landing-single.html">Landing Page</a>
+              <a className="dropdown-item" href="/">Blog Posts</a>
+              <a className="dropdown-item" href="/">Blog single</a>
+              <a className="dropdown-item" href="/">404 Page</a>
+              <a className="dropdown-item" href="/">Landing Page</a>
             </div>
+          </li> */}
+          <li className="nav-item">
+            <a className="nav-link" href="/">Contact</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="contact.html">Contact</a>
+            <a className="nav-link" href="https://bit.ly/CkBvikk" target="_blank">whatsapp</a>
           </li>
-          <div className="search-right">
+          {/* <div className="search-right">
             <a href="#search" title="search"><span className="fa fa-search" aria-hidden="true" /></a>
-            {/* search popup */}
+            {/* search popup 
             <div id="search" className="pop-overlay">
               <div className="popup">
                 <form action="#" method="GET" className="search-box">
@@ -54,12 +58,12 @@ function Header() {
               </div>
               <a className="close" href="#close">×</a>
             </div>
-            {/* /search popup */}
-          </div>
+            {/* /search popup 
+          </div> */}
         </ul>
       </div>
       {/* toggle switch for light and dark theme */}
-      <div className="mobile-position">
+      {/* <div className="mobile-position">
         <nav className="navigation">
           <div className="theme-switch-wrapper">
             <label className="theme-switch" htmlFor="checkbox">
@@ -71,7 +75,7 @@ function Header() {
             </label>
           </div>
         </nav>
-      </div>
+      </div> */}
       {/* //toggle switch for light and dark theme */}
     </nav>
   </div>

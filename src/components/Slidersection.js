@@ -14,7 +14,8 @@ function Slidersection() {
               <div className="container">
                 <div className="banner-info-bg text-left">
                   <p>Better living</p>
-                  <h5>Progressive spaces for a better living</h5>
+                  {/* <h5>Progressive spaces for a better living</h5> */}
+                  <h5>Exclusive Launch By A Reputed Developer, Delivered 27 O.C</h5>
                   <a href="/" className="btn btn-white">Read More</a>
                 </div>
               </div>

@@ -8,8 +8,11 @@ function Footer() {
   <section className="w3l-footer">
     <div className="w3l-footer-16-main py-5">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-6 column">
+        <div className="row p-3">
+            <h3 className="hny-title mb-md-5 mb-4 text-center">RERA No : P51800035093</h3>
+            <p className='text-center'>Disclaimer & Privacy Policy : The content is for information purposes only and does not constitute an offer to avail of any service. Prices mentioned are subject to change without notice and properties mentioned are subject to availability. Images for representation purpose only. This is not the official website. Website Only use for an Advertisement Purpose.</p>
+
+          {/* <div className="col-lg-6 column">
             <div className="row">
               <div className="col-md-4 column">
                 <h3>Company</h3>
@@ -42,8 +45,8 @@ function Footer() {
                 </ul>
               </div>
             </div>
-          </div>
-          <div className="col-lg-6 col-md-12 column pl-lg-5 column4 mt-lg-0 mt-5">
+          </div> */}
+          {/* <div className="col-lg-6 col-md-12 column pl-lg-5 column4 mt-lg-0 mt-5">
             <h3>Newsletter </h3>
             <div className="end-column">
               <h4>Get latest updates and offers.</h4>
@@ -53,8 +56,8 @@ function Footer() {
               </form>
               <p>Sign up for our latest news &amp; articles. We won’t give you spam mails.</p>
             </div>
-          </div>
-        </div>
+          </div>*/}
+        </div> 
         <div className="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
           <div className="columns text-lg-left text-center">
             <p>© 2020 Homish. All rights reserved.Design by <a href="https://w3layouts.com/" target="_blank">

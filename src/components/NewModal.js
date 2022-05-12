@@ -1,18 +1,32 @@
-import React from 'react'
+import React , {useState} from 'react'
+import { Modal } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
+// import { CloseButton } from 'react-bootstrap';
 
 function NewModal() {
+
+    const displaystyle = {
+        "fontFamily" : "'Allerta Stencil', sans-serif",
+        "position": "fixed",
+        "bottom": "150px",
+        "right": "20px",
+        "borderRadius": "15px",
+        "color": "gray",
+        "width": "300px",
+        // "display": "unset",
+        "zIndex": "1000"
+      }
+
+    
+
   return (
     <>
-        <div className="modal1"  >
-            <div className="modal-dialog" >
-                <div className="modal-content">
-                <div className="modal-header">
-                    <h5 className="modal-title">Company Name</h5>
-                    <button type="button" className="close close-modal1" >
-                    <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div className="modal-body">
+        <div className="modal1" style={displaystyle}>
+            <div className="header-modal">
+                <h3>Registration</h3>
+                <img src="assets/images/icons8-close-50.png" width={20} height={20} alt="" />
+            </div>
+            <div className="content">
                     <h5 style={{"textAlign" : "center"}}>Registration</h5>
                     <form action="">
                         <div className="input-group mb-3 mt-3">
@@ -24,16 +38,12 @@ function NewModal() {
                         <div className="input-group mb-1">
                             <input type="email" className="form-control" placeholder="Email" />
                         </div>
-
                     </form>
-                </div>
-                <div className="modal-footer">
-                    <button className='call-btn'>Registration</button>
-                    {/* <p>+91 7200893494</p> */}
-                </div>
-                </div>
             </div>
+            <div className="footer">
+            <button style={{"marginBottom" : "20px" , "border" : "1px solid #ff621a" , "padding" : "10px 15px" , "transition" : "all 0.5s ease" , "color" : "rgb(255, 98, 26)" , "borderRadius" : "15px"}} >Registration</button>
             </div>
+        </div>
     </>
   )
 }
