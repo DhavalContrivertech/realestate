@@ -19,8 +19,15 @@ function About() {
           voluptatem
           tenetur consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
           voluptate rem ullam dolore nisi voluptatibus esse quasi.Integer sit amet mattis quam.</p> */}
-        <p className="my-3 pr-lg-4">The Excellent Planning And Glowing View Of Openness Brighten The Lives, Offering 1,2,3 BHK With Jodi Flats.</p>
-        <a href="about.html" className="btn btn-style btn-secondary mt-4">Read More</a>
+        {/* <p className="my-3 pr-lg-4">The Excellent Planning And Glowing View Of Openness Brighten The Lives, Offering 1,2,3 BHK With Jodi Flats.</p> */}
+        <p className="my-3 pr-lg-4">
+        Chandak Greenairy perfectly designed the revelation offering masterfully crafted homes that suited the habitant and urbanisation.
+
+Thoughtfully chosen amenities, grand design aesthetics, beautifully carved out landscapes where residents can mingle with a discerning community and soak in the finest luxury.
+
+Located in possibly the greenest neighbourhood of Mumbai with acres of beautifully landscaped gardens,  brings its residents closer to nature like never before. With the Western Express Highway and the Magathane Metro Station in close proximity, Greenairy is well connected to business districts and leisure options like malls, theatres and other escapes.
+        </p>
+        <a href="/" className="btn btn-style btn-secondary mt-4">Read More</a>
       </div>
       <div className="col-lg-6 bottom-ab-right mt-lg-0 mt-5">
         {/* <img src="assets/images/ab1.jpg" className="img-fluid" alt="" /> */}
