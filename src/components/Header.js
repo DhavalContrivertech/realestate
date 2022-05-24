@@ -41,7 +41,16 @@ function Header() {
             </div>
           </li> */}
           <li className="nav-item">
-            <a className="nav-link" href="/">Contact</a>
+            <a className="nav-link" href="/">About Us</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/">Floor plan</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/">Connectivity</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/">Contact Us</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="https://bit.ly/CkBvikk" target="_blank">whatsapp</a>

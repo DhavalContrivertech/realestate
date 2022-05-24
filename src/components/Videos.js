@@ -27,7 +27,7 @@ function Videos() {
         </div>
         <div className="history-info mt-5">
           <div className="position-relative">
-            <ReactPlayer url="../assets/images/ChandakVideo.mp4" muted={true} playing={true} loop={true} /> 
+            <ReactPlayer url="../assets/images/ChandakVideo1.mp4" muted={false} playing={false} loop={true} controls={true}/> 
           {/* <video width={600} height={500} poster="../assets/images/Teaser 1 Chandak.jpeg">
             <source src="../assets/images/ChandakVideo.mp4" type="video/mp4" />
           </video> */}

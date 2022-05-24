@@ -13,10 +13,10 @@ function Slidersection() {
             <div className="banner-info">
               <div className="container">
                 <div className="banner-info-bg text-left">
-                  <p>Better living</p>
+                  {/* <p>Better living</p> */}
                   {/* <h5>Progressive spaces for a better living</h5> */}
-                  <h5>Exclusive Launch By A Reputed Developer, Delivered 27 O.C</h5>
-                  <a href="/" className="btn btn-white">Read More</a>
+                  {/* <h5>Exclusive Launch By A Reputed Developer, Delivered 27 O.C</h5> */}
+                  {/* <a href="/" className="btn btn-white">Read More</a> */}
                 </div>
               </div>
             </div>
@@ -37,9 +37,9 @@ function Slidersection() {
             <div className="banner-info">
               <div className="container">
                 <div className="banner-info-bg text-left">
-                  <p>Dream Home</p>
-                  <h5>Everyone Deserves the Opportunity of Home</h5>
-                  <a href="/" className="btn btn-white">Read More</a>
+                  {/* <p>Dream Home</p> */}
+                  {/* <h5>Everyone Deserves the Opportunity of Home</h5> */}
+                  {/* <a href="/" className="btn btn-white">Read More</a> */}
                 </div>
               </div>
             </div>
@@ -60,9 +60,9 @@ function Slidersection() {
             <div className="banner-info">
               <div className="container">
                 <div className="banner-info-bg text-left">
-                  <p>Better living</p>
-                  <h5>Progressive spaces for a better living</h5>
-                  <a href="/" className="btn btn-white">Read More</a>
+                  {/* <p>Better living</p> */}
+                  {/* <h5>Progressive spaces for a better living</h5> */}
+                  {/* <a href="/" className="btn btn-white">Read More</a> */}
                 </div>
               </div>
             </div>
@@ -83,9 +83,9 @@ function Slidersection() {
             <div className="banner-info">
               <div className="container">
                 <div className="banner-info-bg text-left">
-                  <p>Dream Home</p>
-                  <h5>Everyone Deserves the Opportunity of Home</h5>
-                  <a href="/" className="btn btn-white">Read More</a>
+                  {/* <p>Dream Home</p> */}
+                  {/* <h5>Everyone Deserves the Opportunity of Home</h5> */}
+                  {/* <a href="/" className="btn btn-white">Read More</a> */}
                 </div>
               </div>
             </div>

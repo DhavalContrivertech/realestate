@@ -65,14 +65,14 @@ function Main() {
         <Slidersection />
         <About />
         <Whatwedo />
-        <Counter />
+        {/* <Counter /> */}
         <Properties />
         <Plans />
         <Reviews />
         <Videos />
         <StartProject />
         {/* this is onload function */}
-       <Modal show={show} onHide={handleClose}>
+       {/* <Modal show={show} onHide={handleClose}>
         <Modal.Header >
           <Modal.Title>Registration</Modal.Title>
           <button type="button" style={btnstyle} className="btn-close" aria-label="Hide" onClick={handleClose}>
@@ -80,7 +80,7 @@ function Main() {
           </button>
         </Modal.Header>
         <Modal.Body>
-        <h3 style={{"textAlign" : "center"}}>Registration</h3>
+        <h3 style={{"textAlign" : "center"}}>Register Here</h3>
         <form action="">
             <div className="input-group mb-3 mt-3">
                 <input type="text" className="form-control" placeholder="Name"  />
@@ -98,7 +98,7 @@ function Main() {
         <button className='call-btn' onClick={handleClose}>Get Instant Call Back</button>
         <p>+91 7200893494</p>
         </Modal.Footer>
-      </Modal> 
+      </Modal>  */}
             {/* this is onload function */}
 
           
@@ -110,7 +110,7 @@ function Main() {
               show1 ?  
               (<div className="modal1">
                     <div className="header-modal">
-                        <h3>Registration</h3>
+                        <h3>Register Here</h3>
                         <button type="button" style={btnstyle} className="btn-close" aria-label="Hide" onClick={handleClose}>
                         <img src="assets/images/icons8-close-50.png" onClick={handleClose1} width={20} height={20} alt="" />
                         </button>
@@ -130,7 +130,7 @@ function Main() {
                             </form>
                     </div>
                     <div className="footer mt-3">
-                    <button style={{"marginBottom" : "20px" , "border" : "1px solid #ff621a" , "padding" : "10px 15px" , "transition" : "all 0.5s ease" , "color" : "rgb(255, 98, 26)" , "borderRadius" : "15px"}} onClick={handleClose1} >Registration</button>
+                    <button style={{"marginBottom" : "20px" , "border" : "1px solid #ff621a" , "padding" : "10px 15px" , "transition" : "all 0.5s ease" , "color" : "rgb(255, 98, 26)" , "borderRadius" : "15px"}} onClick={handleClose1} >Get Instant Call Back</button>
                     </div>
                 </div>)
                : ""
