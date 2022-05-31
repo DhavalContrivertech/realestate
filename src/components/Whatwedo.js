@@ -1,6 +1,13 @@
-import React from 'react'
+import React , {useContext} from 'react'
+import {popcontext} from '../App';
 
 function Whatwedo() {
+  const {state , dispatch} = useContext(popcontext);
+
+  const showpopup = () => {
+    console.log("value of popup " , state);
+    dispatch({type : "POPUP" , payload : true});
+  }
   return (
     <>
         <section className="w3l-services1">
@@ -14,6 +21,7 @@ function Whatwedo() {
           {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua.
           </p> */}
+          <button className="btn btn-style btn-secondary mt-4" onClick={showpopup} >Get Quote</button>
           {/* <a href="/" className="btn btn-style mt-lg-4 mt-2">Read More</a> */}
         </div>
         <div className="cwp4-image col-lg-4 col-md-6">

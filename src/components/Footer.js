@@ -60,11 +60,11 @@ function Footer() {
         </div> 
         <div className="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
           <div className="columns text-lg-left text-center">
-            <p>© 2020 Homish. All rights reserved.Design by <a href="https://w3layouts.com/" target="_blank">
-                W3Layouts</a>
+            <p>© 2022 Chandak. All rights reserved. Design by <a href="https://www.contrivertech.com/" target="_blank">
+                Contriver Tech</a>
             </p>
           </div>
-          <div className="columns-2 mt-lg-0 mt-3">
+          {/* <div className="columns-2 mt-lg-0 mt-3">
             <ul className="social">
               <li><a href="#facebook"><span className="fa fa-facebook" aria-hidden="true" /></a>
               </li>
@@ -77,7 +77,7 @@ function Footer() {
               <li><a href="#github"><span className="fa fa-github" aria-hidden="true" /></a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React , {useState} from 'react'
+import React , {useContext, useEffect, useReducer, useState} from 'react'
 import About from './components/About'
 import Counter from './components/Counter'
 import Footer from './components/Footer'
@@ -13,18 +13,78 @@ import Slidersection from './components/Slidersection'
 import StartProject from './components/StartProject'
 import Videos from './components/Videos'
 import Whatwedo from './components/Whatwedo'
+import Contact from './components/Contact'
 import { CloseButton, Modal } from 'react-bootstrap'
 import { Button } from 'react-bootstrap'
+import axios from 'axios'
+// import { initialState , reducer} from './reducer/popupreducer';
 // import CloseButton from 'react-bootstrap'
+import {popcontext} from './App';
+import Swal from 'sweetalert2';
 
 function Main() {
-  const [show, setShow] = useState(true);
+  const initialvalue = {
+    Name : "",
+    Number : "",
+    Email : ""
+  }
+
+  const [formdata , setformdata] = useState(initialvalue);
+
+  const handledata = (e) => {
+    let name = e.target.name;
+    let value = e.target.value;
+    
+    setformdata({...formdata , [name] : value});
+    
+  }
+  // console.log(handledata);
+  const submitdata = async  (e) => {
+  e.preventDefault();
+  if (formdata.Number.length === 10) {
+    // console.log(formdata);
+    const requestOptions = {
+      Name : formdata.Name,
+      Number : formdata.Number,
+      Email : formdata.Email
+    };
+
+    const mailbody = {
+      Name : formdata.Name,
+      Email : formdata.Email,
+      Number : formdata.Number
+    }
+
+    await axios.post("http://65.0.139.240:3000", requestOptions).then((res) => {
+      console.log(res.status)
+      if (res.status) {
+        Swal.fire({
+            title: 'Your enquiry has been received',
+          })
+      }
+
+    }
+    ).catch((err) => console.log(err))
+  }else{
+    Swal.fire({
+        title: 'Please Enter Valid Number',
+    })
+}
+    // let data = await res;
+    // console.log("responce for this is " + data);
+    setformdata({Name : "" , Number : "" , Email : ""});
+
+  }
+  const {state , dispatch} = useContext(popcontext);
+
+  // const [show, setShow] = useState(true);
   const [show1, setShow1] = useState(true);
 
-  const handleClose = () => setShow(false);
+  // const handleClose = () => setShow(false);
   const handleClose1 = () => setShow1(false);
 
-  const handleClose11 = () => {
+  const handleClose11 = (e) => {
+    
     console.log("helo this is show value");
     setShow1(!show1);
     
@@ -48,6 +108,14 @@ function Main() {
     "textTransform" : "capitalize",
     "zIndex" : "1000"
   }
+
+  const handlepopup = () => {
+    dispatch({type : "POPUP" , payload : false});
+  }
+  
+  // useEffect(() => {
+  //   dispatch({type : "POPUP" , payload : false});
+  // })
   return (
     <>
       {/* <div class="pull-right toggle-right-sidebar">
@@ -70,35 +138,74 @@ function Main() {
         <Plans />
         <Reviews />
         <Videos />
+        <Contact />
         <StartProject />
         {/* this is onload function */}
-       {/* <Modal show={show} onHide={handleClose}>
+
+       {/* <Modal className={state ? "showpopup" : "removepopup"}> */}
+       <Modal show={state} classname="openmodalclick">
         <Modal.Header >
-          <Modal.Title>Registration</Modal.Title>
-          <button type="button" style={btnstyle} className="btn-close" aria-label="Hide" onClick={handleClose}>
+          {/* <Modal.Title>Registration</Modal.Title> */}
+          <Modal.Title className='text-center w-100'>Just a click away <br /> from your dream home</Modal.Title>
+          <button type="button" style={btnstyle} className="btn-close" aria-label="Hide" onClick={handlepopup}>
             <img src="assets/images/icons8-close-50.png" width={20} height={20} alt="" />
           </button>
         </Modal.Header>
-        <Modal.Body>
-        <h3 style={{"textAlign" : "center"}}>Register Here</h3>
-        <form action="">
-            <div className="input-group mb-3 mt-3">
-                <input type="text" className="form-control" placeholder="Name"  />
+        <Modal.Body className='row'>
+          <div className="col-md-4 col-12">
+            <div className="col-12 padding-lost">
+              <h5 style={{"fontSize" : "17px" , "textAlign" : "center"}}>We Promise</h5>
             </div>
-            <div className="input-group mb-3">
-                <input type="Number" className="form-control" placeholder="Number" />
-            </div>
-            <div className="input-group mb-3">
-                <input type="email" className="form-control" placeholder="Email" />
-            </div>
-
-        </form>
+            <div className='wePromise'>
+              <div className="col-xs-4 col-md-12 padding-lost ">
+                <div className="col-12 d-grid place-items-center ">
+                  <img src="assets/images/instant_call_back.png" alt="" width="40%" style={{"margin" : "auto"}}/>
+                </div>
+                <div className="col-12 promise-sec-text">
+                  Get Instant Call Back
+                </div>
+              </div>
+              <div className="col-xs-4 col-md-12 padding-lost">
+                <div className="col-12 d-grid place-items-center ">
+                  <img src="assets/images/free_site_visit.png" alt="" width="40%" style={{"margin" : "auto"}}/>
+                </div>
+                <div className="col-12 promise-sec-text">
+                  free site visit
+                </div>
+              </div>
+              <div className="col-xs-4 col-md-12 padding-lost">
+                <div className="col-12 d-grid place-items-center ">
+                  <img src="assets/images/unmatched_price.png" alt="" width="40%" style={{"margin" : "auto"}}/>
+                </div>
+                <div className="col-12 promise-sec-text">
+                  Unmactched Price
+                </div>
+              </div>
+              </div>
+          </div>
+          <div className="col-md-8 col-12 ">
+            {/* <h3 style={{"textAlign" : "center" , "fontSize" : "17px" }}>Register Here</h3> */}
+            <h3 className='modal-subheading' >Chandak Greenairy</h3>
+            <form onSubmit={submitdata} >
+                <div className="input-group mb-3 mt-3">
+                    <input type="text" className="form-control" placeholder="Name" name='Name' required value={formdata.Name} onChange={handledata} />
+                </div>
+                <div className="input-group mb-3">
+                    <input type="tel" minlength="8" className="form-control" placeholder="Number" name="Number" required value={formdata.Number} onChange={handledata}/>
+                </div>
+                <div className="input-group mb-3">
+                    <input type="email" className="form-control" placeholder="Email" name="Email" required value={formdata.Email} onChange={handledata}/>
+                </div>
+                <div className="button d-grid place-items-center">
+                  <button className='call-btn' type='submit'  >Get Instant Call Back</button>
+                </div>
+            </form>
+          </div>
         </Modal.Body>
         <Modal.Footer>
-        <button className='call-btn' onClick={handleClose}>Get Instant Call Back</button>
-        <p>+91 7200893494</p>
+        <p><a href="tel:7200893494" className='text-white'>+91 7200893494</a></p>
         </Modal.Footer>
-      </Modal>  */}
+      </Modal> 
             {/* this is onload function */}
 
           
@@ -108,30 +215,31 @@ function Main() {
             </button>
             {
               show1 ?  
-              (<div className="modal1">
+              (<div className="modal1 py-3 shadow">
+                            <form onSubmit={submitdata}>
                     <div className="header-modal">
                         <h3>Register Here</h3>
-                        <button type="button" style={btnstyle} className="btn-close" aria-label="Hide" onClick={handleClose}>
+                        <button type="button" style={btnstyle} className="btn-close" aria-label="Hide" >
                         <img src="assets/images/icons8-close-50.png" onClick={handleClose1} width={20} height={20} alt="" />
                         </button>
                     </div>
-                    <div className="content mt-3">
+                    <div className="content mt-3 px-3">
                             {/* <h5 style={{"textAlign" : "center"}}>Registration</h5> */}
-                            <form action="">
                                 <div className="input-group mb-3 mt-3">
-                                    <input type="text" className="form-control" placeholder="Name"  />
+                                    <input type="text" className="form-control" placeholder="Name" required name='Name' value={formdata.Name} onChange={handledata} />
                                 </div>
                                 <div className="input-group mb-3">
-                                    <input type="Number" className="form-control" placeholder="Number" />
+                                    <input type="tel" minlength="8" className="form-control" placeholder="Number" required name="Number" value={formdata.Number} onChange={handledata} />
                                 </div>
                                 <div className="input-group mb-1">
-                                    <input type="email" className="form-control" placeholder="Email" />
+                                    <input type="email" className="form-control" placeholder="Email" required name="Email" value={formdata.Email} onChange={handledata}/>
                                 </div>
-                            </form>
                     </div>
                     <div className="footer mt-3">
-                    <button style={{"marginBottom" : "20px" , "border" : "1px solid #ff621a" , "padding" : "10px 15px" , "transition" : "all 0.5s ease" , "color" : "rgb(255, 98, 26)" , "borderRadius" : "15px"}} onClick={handleClose1} >Get Instant Call Back</button>
+                    <button style={{"marginBottom" : "20px" , "border" : "1px solid #ff621a" , "padding" : "10px 15px" , "transition" : "all 0.5s ease" , "color" : "rgb(255, 98, 26)" , "borderRadius" : "15px"}} >Get Instant Call Back</button>
                     </div>
+                    </form>
+
                 </div>)
                : ""
           }

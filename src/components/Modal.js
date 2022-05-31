@@ -1,17 +1,17 @@
-// import React , {useState} from 'react'
-// import { Modal } from 'react-bootstrap'
-// import { Button } from 'react-bootstrap'
+import React , {useState} from 'react'
+import { Modal } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 
-// function modal1() {
-  // const [show, setShow] = useState(true);
+function modal1() {
+  const [show, setShow] = useState(true);
 
-  // const handleClose = () => setShow(false);
-  // const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-  // return (
-  //   <>
+  return (
+    <>
 
-{/* <Modal show={show} onHide={handleClose}>
+<Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
@@ -24,8 +24,8 @@
             Save Changes
           </Button>
         </Modal.Footer>
-      </Modal> */}
-      {/* <div className="modal"  role="dialog">
+      </Modal> 
+      <div className="modal"  role="dialog">
   <div className="modal-dialog" role="document">
     <div className="modal-content">
       <div className="modal-header">
@@ -55,11 +55,11 @@
       </div>
     </div>
   </div>
-</div> */}
+</div>
 
-{/* 
+
     </>
   )
-} */}
+} 
 
-// export default Modal1
+export default Modal1

@@ -19,14 +19,14 @@ function Reviews() {
               <div className="testimonial">
                 <blockquote>
                   <span className="fa fa-quote-left" aria-hidden="true" />
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae integer sit amet .Nulla ex nunc, interdum nec egestas nec, dapibus ac mauris. Vivamus id tempor nisl.
+                  getting the right was guidance help me to buy   3bhk flat at Borivali east.With the after sales service was excellent, smooth and transparent.
                 </blockquote>
                 <div className="testi-des">
                   <div className="test-img"><img src="assets/images/team1.jpg" className="img-fluid" alt="client-img" />
                   </div>
                   <div className="peopl align-self">
-                    <h3>Rohit Paul</h3>
-                    <p className="indentity">Example City</p>
+                    <h3>Mr. Tannay Jayesh Sheth</h3>
+                    <p className="indentity">Practising CA</p>
                   </div>
                 </div>
               </div>
@@ -37,20 +37,20 @@ function Reviews() {
               <div className="testimonial">
                 <blockquote>
                   <span className="fa fa-quote-left" aria-hidden="true" />
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae integer sit amet .Nulla ex nunc, interdum nec egestas nec, dapibus ac mauris. Vivamus id tempor nisl.
+                  In the search of lavish 4bhk apartment getting right price was big challenge, but now we are satisfied and got pure professional service.
                 </blockquote>
                 <div className="testi-des">
                   <div className="test-img"><img src="assets/images/team2.jpg" className="img-fluid" alt="client-img" />
                   </div>
                   <div className="peopl align-self">
-                    <h3>Shveta</h3>
-                    <p className="indentity">Example City</p>
+                    <h3>Mr. Dharmish Sheth </h3>
+                    <p className="indentity">Om jewel’s Business owner </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="item">
+          {/* <div className="item">
             <div className="testimonial-content">
               <div className="testimonial">
                 <blockquote>
@@ -67,8 +67,8 @@ function Reviews() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="item">
+          </div> */}
+          {/* <div className="item">
             <div className="testimonial-content">
               <div className="testimonial">
                 <blockquote>
@@ -85,8 +85,8 @@ function Reviews() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="item">
+          </div> */}
+          {/* <div className="item">
             <div className="testimonial-content">
               <div className="testimonial">
                 <blockquote>
@@ -103,8 +103,8 @@ function Reviews() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="item">
+          </div> */}
+          {/* <div className="item">
             <div className="testimonial-content">
               <div className="testimonial">
                 <blockquote>
@@ -121,7 +121,7 @@ function Reviews() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import React from 'react'
 function Properties() {
   return (
     <>
-        <section className="w3l-how-grids-3 py-5 properties" id="how">
+        <section className="w3l-how-grids-3 py-5 properties" id="connect">
   <div className="container py-md-5" >
     <div className="w3l-header mb-md-5 mb-4 text-center">
       {/* <h6 className="sub-title">Properties</h6> */}

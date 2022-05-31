@@ -1,12 +1,13 @@
 import React from 'react'
 
 function Header() {
+
   return (
     <>
         <header id="site-header" className="fixed-top">
   <div className="container">
     <nav className="navbar navbar-expand-lg stroke">
-      <h1><a className="navbar-brand mr-lg-5" href="index.html">
+      <h1><a className="navbar-brand mr-lg-5" href="#">
           {/* Hom<span>i</span>sh */}
           <img src="assets/images/chandak-logo.svg" alt="" srcset="" />
         </a></h1>
@@ -41,16 +42,16 @@ function Header() {
             </div>
           </li> */}
           <li className="nav-item">
-            <a className="nav-link" href="/">About Us</a>
+            <a className="nav-link" href="#about">About Us</a>
+          </li>
+          {/* <li className="nav-item">
+            <a className="nav-link" href="#">Floor plan</a>
+          </li> */}
+          <li className="nav-item">
+            <a className="nav-link" href="#connect">Connectivity</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">Floor plan</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/">Connectivity</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/">Contact Us</a>
+            <a className="nav-link" href="#contact" >Contact Us</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="https://bit.ly/CkBvikk" target="_blank">whatsapp</a>

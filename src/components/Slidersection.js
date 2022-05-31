@@ -7,6 +7,27 @@ function Slidersection() {
        <section className="w3l-main-slider" id="home">
   <div className="companies20-content">
     <div className="owl-one owl-carousel owl-theme">
+    {/* <div className="item">
+        <li>
+          <div className="slider-info banner-view bg bg1">
+            <div className="banner-info">
+              <div className="container">
+                <div className="banner-info-bg text-left">
+                  
+                </div>
+              </div>
+            </div>
+            <div className="banhny-w3grids">
+              <div className="banhny-w3grids-1">
+                <h4 className="number-b">1</h4>
+              </div>
+              <div className="banhny-w3grids-1">
+                <h4><a href="/" className="hnys-title">The better way to buy real estate.</a></h4>
+              </div>
+            </div>
+          </div>
+        </li>
+      </div> */}
       <div className="item">
         <li>
           <div className="slider-info banner-view bg bg2">
