@@ -60,7 +60,7 @@ function Footer() {
         </div> 
         <div className="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
           <div className="columns text-lg-left text-center">
-            <p>© 2022 Chandak. All rights reserved. Design by <a href="https://www.contrivertech.com/" target="_blank">
+            <p>© 2022 Chandak. All rights reserved. Design by <a href="https://www.contrivertech.com/" target="_blank" rel="noreferrer">
                 Contriver Tech</a>
             </p>
           </div>

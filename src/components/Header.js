@@ -7,9 +7,9 @@ function Header() {
         <header id="site-header" className="fixed-top">
   <div className="container">
     <nav className="navbar navbar-expand-lg stroke">
-      <h1><a className="navbar-brand mr-lg-5" href="#">
+      <h1><a className="navbar-brand mr-lg-5" href="/">
           {/* Hom<span>i</span>sh */}
-          <img src="assets/images/chandak-logo.svg" alt="" srcset="" />
+          <img src="assets/images/chandak-logo.svg" alt=""  />
         </a></h1>
       {/* if logo is image enable this   
 <a class="navbar-brand" href="#index.html">
@@ -54,7 +54,7 @@ function Header() {
             <a className="nav-link" href="#contact" >Contact Us</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="https://bit.ly/CkBvikk" target="_blank">whatsapp</a>
+            <a className="nav-link" href="https://bit.ly/CkBvikk" target="_blank" rel="noreferrer">whatsapp</a>
           </li>
           {/* <div className="search-right">
             <a href="#search" title="search"><span className="fa fa-search" aria-hidden="true" /></a>

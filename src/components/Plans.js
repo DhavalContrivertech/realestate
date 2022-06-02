@@ -1,6 +1,13 @@
-import React from 'react'
+import React , {useContext} from 'react'
+import {popcontext} from '../App';
 
 function Plans() {
+  const {state , dispatch} = useContext(popcontext);
+
+  const showpopup = () => {
+    console.log("value of popup " , state);
+    dispatch({type : "POPUP" , payload : true});
+  }
   return (
     <>
         <section className="w3l-pricing-11">
@@ -35,9 +42,10 @@ function Plans() {
             <li><span className="fa fa-check" /> Morbi sed sem ac odio.</li>
             <li><span className="fa fa-check" /> Aenean et tellus tincidunt.</li>
           </ul> */}
-          {/* <div className="text-center pos">	
-            <a href="/" className="action"> Contact Us</a>
-          </div> */}
+          <div className="text-center pos">	
+          <button className="btn btn-style btn-secondary mt-4"  onClick={showpopup}>Get Final Price</button>
+            {/* <a href="/" className="action"> Contact Us</a> */}
+          </div>
         </div>
         <div className="column pricing-grid pricing-grid-active">
           <div className="text-center price-icon">
@@ -62,10 +70,11 @@ function Plans() {
             <li><span className="fa fa-check" /> Sed tincidunt, nisl vitae mattis.</li>
             <li><span className="fa fa-check" /> Morbi sed sem ac odio.</li>
             <li><span className="fa fa-check" /> Aenean et tellus tincidunt.</li>
-          </ul>
+        </ul>*/}
           <div className="text-center pos">	
-            <a href="contact.html" className="action"> Contact Us</a>
-          </div> */}
+          <button className="btn btn-style btn-secondary mt-4"  onClick={showpopup}>Get Final Price</button>
+            {/* <a href="contact.html" className="action"> Contact Us</a> */}
+          </div> 
         </div>
         <div className="column pricing-grid">
           <div className="text-center price-icon">
@@ -90,10 +99,11 @@ function Plans() {
             <li><span className="fa fa-check" /> Sed tincidunt, nisl vitae mattis.</li>
             <li><span className="fa fa-check" /> Morbi sed sem ac odio.</li>
             <li><span className="fa fa-check" /> Aenean et tellus tincidunt.</li>
-          </ul>
+        </ul>*/}
           <div className="text-center pos">	
-            <a href="contact.html" className="action"> Contact Us</a>
-          </div> */}
+          <button className="btn btn-style btn-secondary mt-4" onClick={showpopup} >Get Final Price</button>
+            {/* <a href="contact.html" className="action"> Contact Us</a> */}
+          </div> 
         </div>
       </div>
     </div>

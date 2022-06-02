@@ -1,11 +1,11 @@
-import React , {useContext, useEffect, useReducer, useState} from 'react'
+import React , {useContext, useState} from 'react'
 import About from './components/About'
-import Counter from './components/Counter'
+// import Counter from './components/Counter'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import Minisidebar from './components/Minisidebar'
+// import Minisidebar from './components/Minisidebar'
 // import Modal from './components/Modal'
-import NewModal from './components/NewModal'
+// import NewModal from './components/NewModal'
 import Plans from './components/Plans'
 import Properties from './components/Properties'
 import Reviews from './components/Reviews'
@@ -14,15 +14,20 @@ import StartProject from './components/StartProject'
 import Videos from './components/Videos'
 import Whatwedo from './components/Whatwedo'
 import Contact from './components/Contact'
-import { CloseButton, Modal } from 'react-bootstrap'
-import { Button } from 'react-bootstrap'
+import {  Modal } from 'react-bootstrap'
+// import { CloseButton , Button } from 'react-bootstrap'
 import axios from 'axios'
 // import { initialState , reducer} from './reducer/popupreducer';
 // import CloseButton from 'react-bootstrap'
 import {popcontext} from './App';
 import Swal from 'sweetalert2';
+import Banner from './components/Banner'
+import { useNavigate } from 'react-router-dom'
+
+
 
 function Main() {
+  const navigation = useNavigate();
   const initialvalue = {
     Name : "",
     Number : "",
@@ -49,18 +54,19 @@ function Main() {
       Email : formdata.Email
     };
 
-    const mailbody = {
-      Name : formdata.Name,
-      Email : formdata.Email,
-      Number : formdata.Number
-    }
+    // const mailbody = {
+    //   Name : formdata.Name,
+    //   Email : formdata.Email,
+    //   Number : formdata.Number
+    // }
 
     await axios.post("http://65.0.139.240:3000", requestOptions).then((res) => {
       console.log(res.status)
       if (res.status) {
-        Swal.fire({
+          Swal.fire({
             title: 'Your enquiry has been received',
           })
+          navigation("/Thankyou")
       }
 
     }
@@ -131,12 +137,17 @@ function Main() {
     </div> */}
         <Header />
         <Slidersection />
+        {/* Book Site Visit To Explore More - button ("BOOK SITE VISIT") 
+Get Latest Payment Plan & Scheme - button ("View Payment Plan & Scheme") */}
+        <Banner title="Download Brochure & Floor Plan To Explore More" btn="Get Final Price"/>
         <About />
         <Whatwedo />
         {/* <Counter /> */}
+        <Banner title="Book Site Visit To Explore More" btn="BOOK SITE VISIT"/>
         <Properties />
         <Plans />
         <Reviews />
+        <Banner title="Get Latest Payment Plan & Scheme" btn="View Payment Plan & Scheme"/>
         <Videos />
         <Contact />
         <StartProject />
@@ -191,7 +202,7 @@ function Main() {
                     <input type="text" className="form-control" placeholder="Name" name='Name' required value={formdata.Name} onChange={handledata} />
                 </div>
                 <div className="input-group mb-3">
-                    <input type="tel" minlength="8" className="form-control" placeholder="Number" name="Number" required value={formdata.Number} onChange={handledata}/>
+                    <input type="tel" minLength="8" className="form-control" placeholder="Number" name="Number" required value={formdata.Number} onChange={handledata}/>
                 </div>
                 <div className="input-group mb-3">
                     <input type="email" className="form-control" placeholder="Email" name="Email" required value={formdata.Email} onChange={handledata}/>
@@ -229,7 +240,7 @@ function Main() {
                                     <input type="text" className="form-control" placeholder="Name" required name='Name' value={formdata.Name} onChange={handledata} />
                                 </div>
                                 <div className="input-group mb-3">
-                                    <input type="tel" minlength="8" className="form-control" placeholder="Number" required name="Number" value={formdata.Number} onChange={handledata} />
+                                    <input type="tel" minLength="8" className="form-control" placeholder="Number" required name="Number" value={formdata.Number} onChange={handledata} />
                                 </div>
                                 <div className="input-group mb-1">
                                     <input type="email" className="form-control" placeholder="Email" required name="Email" value={formdata.Email} onChange={handledata}/>

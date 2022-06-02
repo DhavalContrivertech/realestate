@@ -1,7 +1,9 @@
 import React , {useState} from 'react'
 import axios from 'axios'
 import Swal from 'sweetalert2'
+import { useNavigate } from 'react-router-dom'
 function Contact() {
+    const navigation = useNavigate();
     const initialvalue = {
         Name : "",
         Number : "",
@@ -35,10 +37,12 @@ function Contact() {
                 Swal.fire({
                     title: 'Your enquiry has been received',
                 })
+                navigation("/Thankyou")
             }
 
         }
         ).catch((err) => console.log(err))
+
     }else{
         Swal.fire({
             title: 'Please Enter Valid Number',
@@ -73,7 +77,7 @@ function Contact() {
                 </div>
                 <div className="col-md-6">
                     <div className="row">
-                        <input type="tel" minlength="8"  id="Number" placeholder='Your Number *' name="Number" value={formdata.Number} onChange={handledata}/>
+                        <input type="tel" minLength="8"  id="Number" placeholder='Your Number *' name="Number" value={formdata.Number} onChange={handledata}/>
                     </div>
                     <div className="row">
                         {/* <input type="text" name="Message" id="Message" placeholder='Your Message ...' /> */}

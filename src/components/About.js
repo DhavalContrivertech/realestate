@@ -19,8 +19,8 @@ function About() {
     <div className="row bottom-ab-grids align-items-center">
       <div className="col-lg-6 bottom-ab-left pr-lg-5">
         <h6 className="sub-title">GREENAIRY</h6>
-        <p className="my-3 pr-lg-4">
-        <div class="holder1">
+        <div className="my-3 pr-lg-4">
+        <div className="holder1">
             <ul>
                 <li>PREMIUM 1& 2 BHKs WITH JODI OPTIONS</li>
                 <li>PANORAMIC VIEWS OF NATIONAL PARK & CITY</li>
@@ -34,7 +34,7 @@ function About() {
         Thoughtfully chosen amenities, grand design aesthetics, beautifully carved out landscapes where residents can mingle with a discerning community and soak in the finest luxury.
 
         Located in possibly the greenest neighbourhood of Mumbai with acres of beautifully landscaped gardens,  brings its residents closer to nature like never before. With the Western Express Highway and the Magathane Metro Station in close proximity, Greenairy is well connected to business districts and leisure options like malls, theatres and other escapes. */}
-        </p>
+        </div>
         <button className="btn btn-style btn-secondary mt-4" onClick={showpopup}>Get Quote</button>
       </div>
       <div className="col-lg-6 bottom-ab-right mt-lg-0 mt-5">
